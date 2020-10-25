@@ -1,0 +1,26 @@
+{
+  "name": "fullstack",
+  "version": "1.0.0",
+  "description": "fullstack app with angular and node express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kafarzada/fullstack.git"
+  },
+  "keywords": [
+    "express",
+    "angular"
+  ],
+  "author": "Kafarzada Vurgun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kafarzada/fullstack/issues"
+  },
+  "homepage": "https://github.com/kafarzada/fullstack#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
