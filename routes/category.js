@@ -4,10 +4,10 @@ const passport = require('passport')
 const controller = require('../controllers/category')
 const upload = require('../middleware/upload')
 
-router.get('/',passport.authenticate('jwt', {session: false}), controller.getAll)
-router.get('/:id', controller.getbyId)
-router.delete('/:id', controller.remove)
-router.post('/', upload.single('image'), controller.create)
-router.patch('/:id', upload.single('image'), controller.update)
+router.get('/', passport.authenticate('jwt', {session: false}), controller.getAll)
+router.get('/:id',passport.authenticate('jwt', {session: false}), controller.getbyId)
+router.delete('/:id',passport.authenticate('jwt', {session: false}), controller.remove)
+router.post('/', passport.authenticate('jwt', {session: false}), upload.single('image'), controller.create)
+router.patch('/:id',passport.authenticate('jwt', {session: false}), upload.single('image'), controller.update)
 
 module.exports = router
